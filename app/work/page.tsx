@@ -48,7 +48,7 @@ export default function WorkPage() {
                 </div>
                 <div className="p-5">
                   <p className="text-xs text-ink-faint mb-1">{project.year}</p>
-                  <h2 className="font-display font-bold text-lg leading-snug mb-2 group-hover:underline decoration-1 underline-offset-4">
+                  <h2 className="font-display font-bold text-lg leading-snug mb-2 text-coffee group-hover:underline decoration-1 underline-offset-4">
                     {project.title}
                   </h2>
                   <p className="text-sm text-ink-soft leading-relaxed">
