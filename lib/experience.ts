@@ -46,7 +46,7 @@ export const experience: Experience[] = [
     role: "Business Development & Marketing Intern — Health & Beauty",
     period: "Feb 2026 — May 2026",
     summary:
-      "At Hyundai Corporation, I supported the global expansion of Korean beauty and wellness brands across Europe and Latin America. My work sat at the intersection of market research, business development, and localized marketing, with a focus on identifying the right buyers, positioning products for new markets, and building launch strategies tailored to local consumers.",
+      "Global expansion work for Korean beauty and wellness brands — market research, buyer outreach, and localized launch strategy across Europe and Latin America — that built a pipeline of 300+ buyers and 10 partnerships.",
     heroStats: [
       { value: "300+", label: "Buyers" },
       { value: "10", label: "Partnerships" },
