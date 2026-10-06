@@ -394,7 +394,20 @@ export default function ProjectPage({
       {hasShowcase && (
         <section className="px-6 sm:px-10 lg:px-14 py-8 sm:py-10">
           <Reveal>
-            <p className="eyebrow mb-4">{project.showcaseLabel ?? "final design"}</p>
+            <div className="mb-4 flex items-baseline justify-between gap-4">
+              <p className="eyebrow">{project.showcaseLabel ?? "final design"}</p>
+              {project.siteLink && (
+                <a
+                  href={project.siteLink.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link-draw inline-flex items-center gap-1 text-sm font-medium text-coffee"
+                >
+                  {project.siteLink.label}
+                  <span aria-hidden="true">↗</span>
+                </a>
+              )}
+            </div>
             <SlideStrip slides={project.showcase!} />
           </Reveal>
         </section>

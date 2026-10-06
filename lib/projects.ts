@@ -22,6 +22,8 @@ export type Project = {
   showcaseBefore?: string;
   /** Overrides the small label above the showcase (default "final design"). */
   showcaseLabel?: string;
+  /** Live site link shown at the top right of the showcase. */
+  siteLink?: { label: string; href: string };
   image: string;
   imageAlt: string;
   size: "large" | "small";
@@ -65,7 +67,6 @@ export const projects: Project[] = [
         body: [
           "Redesigned the website for Spero, a student-run, gospel-centered apparel project creating clothing inspired by scripture. The goal was to build a stronger brand experience despite having a smaller product catalog than traditional apparel brands.",
         ],
-        link: { label: "shopspero.org", href: "https://www.shopspero.org/" },
       },
       {
         heading: "Problem",
@@ -97,7 +98,6 @@ export const projects: Project[] = [
         body: [
           "I used photography as a central part of the website, allowing each piece to feel connected to a larger story and visual identity. I also simplified navigation and product discovery so users could easily move between the brand story, designs, and shop.",
         ],
-        link: { label: "shopspero.org", href: "https://www.shopspero.org/" },
       },
       {
         heading: "Outcome",
@@ -107,6 +107,7 @@ export const projects: Project[] = [
       },
     ],
     showcaseBefore: "Outcome",
+    siteLink: { label: "shopspero.org", href: "https://www.shopspero.org/" },
     showcase: [
       { src: "/images/spero/redesign/01-to-hope.jpg", alt: "Spero site — “to hope.” brand statement with the vision behind the name" },
       { src: "/images/spero/redesign/02-mission.jpg", alt: "Spero site — Our Mission section over a photo of a printed T-shirt back" },
@@ -134,6 +135,7 @@ export const projects: Project[] = [
     // the Overview section below carries the intro.
     intro: "",
     showcaseBefore: "Outcome",
+    siteLink: { label: "TAUG website", href: "https://toanunknowngod.weebly.com/" },
     showcase: [
       { src: "/images/taug/redesign/01-home-hero.jpg", alt: "TAUG home page — full-bleed landscape hero announcing the 2025–2026 theme, Devotion, with a View Issue button" },
       { src: "/images/taug/redesign/02-home-about.jpg", alt: "TAUG home page — 'Est. 2008' introduction to To An Unknown God beside a photo of printed issues" },
