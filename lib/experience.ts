@@ -356,11 +356,4 @@ export const experience: Experience[] = [
       },
     ],
   },
-  {
-    slug: "the-veritas-forum",
-    place: "The Veritas Forum",
-    role: "Designer & Social Media Manager",
-    period: "Aug 2024 — Present",
-    summary: "Design and social media management for The Veritas Forum.",
-  },
 ];
