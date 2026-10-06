@@ -107,7 +107,7 @@ export const projects: Project[] = [
       },
     ],
     showcaseBefore: "Outcome",
-    siteLink: { label: "shopspero.org", href: "https://www.shopspero.org/" },
+    siteLink: { label: "SPERO website", href: "https://www.shopspero.org/" },
     showcase: [
       { src: "/images/spero/redesign/01-to-hope.jpg", alt: "Spero site — “to hope.” brand statement with the vision behind the name" },
       { src: "/images/spero/redesign/02-mission.jpg", alt: "Spero site — Our Mission section over a photo of a printed T-shirt back" },
