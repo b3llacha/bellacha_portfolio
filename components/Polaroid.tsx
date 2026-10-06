@@ -9,6 +9,7 @@ export function Polaroid({
   alt,
   rotate = "-2deg",
   colorIndex = 0,
+  color: colorOverride,
   className = "",
   priority = false,
   aspectClassName = "aspect-[3/4]",
@@ -17,13 +18,15 @@ export function Polaroid({
   alt: string;
   rotate?: string;
   colorIndex?: number;
+  /** Hex color that overrides the palette pick for the tape and gingham. */
+  color?: string;
   className?: string;
   priority?: boolean;
   /** Overrides the photo's aspect ratio (default aspect-[3/4]) to match the
    * source image's true proportions instead of cropping it square-ish. */
   aspectClassName?: string;
 }) {
-  const color = palette[colorIndex % palette.length];
+  const color = colorOverride ?? palette[colorIndex % palette.length];
 
   return (
     <div
