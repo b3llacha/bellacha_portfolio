@@ -304,7 +304,7 @@ export default function ProjectPage({
             </span>
             {project.pageSubtitle && (
               <span className="text-xl sm:text-2xl font-bold text-coffee/70 whitespace-nowrap">
-                — 
+                {"— "}
                 {project.pageSubtitle}
               </span>
             )}
