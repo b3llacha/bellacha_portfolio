@@ -12,7 +12,7 @@ const config: Config = {
         paper: "#FAF7F2",
         ink: "#111111",
         "ink-soft": "#55565B",
-        "ink-faint": "#9A9AA0",
+        "ink-faint": "#6A6A70",
         line: "#EAE6DC",
         pill: "#F4F1E9",
         coffee: "#5B3A22",

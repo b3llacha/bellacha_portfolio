@@ -7,7 +7,7 @@ import { Patch } from "./Patch";
 
 export default function SelectedWork() {
   return (
-    <section id="work" className="relative px-10 sm:px-14 lg:px-20 py-16 sm:py-24 overflow-hidden">
+    <section id="work" className="relative px-6 sm:px-10 lg:px-14 py-16 sm:py-24 overflow-hidden">
       <Patch name="star-purple" size={38} rotate="-8deg" style={{ top: "12px", right: "8%" }} />
       <Patch name="flower" size={32} rotate="12deg" style={{ bottom: "6%", left: "4%" }} />
       <Reveal>

@@ -8,7 +8,7 @@ import { experience } from "@/lib/experience";
 
 export default function Hero() {
   return (
-    <section className="relative px-10 sm:px-14 lg:px-20 pt-6 pb-20 sm:pb-28 overflow-hidden">
+    <section className="relative px-6 sm:px-10 lg:px-14 pt-6 pb-20 sm:pb-28 overflow-hidden">
       <Patch name="flower" size={44} rotate="-6deg" style={{ top: "16px", left: "14px" }} />
       <Patch name="cloud" size={46} rotate="4deg" style={{ top: "16px", right: "6%" }} />
       <Patch name="star-yellow" size={38} rotate="10deg" style={{ bottom: "8%", left: "34%" }} />
@@ -40,6 +40,12 @@ export default function Hero() {
             <h1 className="mt-8 font-display font-extrabold text-coffee text-4xl sm:text-5xl tracking-tight whitespace-nowrap">
               hi, i&rsquo;m bella
             </h1>
+            {/* One-line role label so a skimming recruiter knows what she
+                does before reading anything else */}
+            <p className="eyebrow !text-[14px] !text-coffee mt-3 leading-relaxed">
+              <span className="block">product designer + marketer</span>
+              <span className="block">uc berkeley &middot; cognitive science</span>
+            </p>
           </Reveal>
 
           <Reveal delay={160} className="mt-10 max-w-[220px] sm:max-w-[250px]">
@@ -90,12 +96,6 @@ export default function Hero() {
               <h2 className="eyebrow !text-[13px] mb-2">toolkit</h2>
               <p className="text-ink-soft text-[15px] leading-relaxed">
                 {toolkit.join(" · ")}
-              </p>
-            </div>
-            <div className="sm:col-span-2">
-              <h2 className="eyebrow !text-[13px] mb-2">say hi</h2>
-              <p className="text-ink-soft text-[15px] leading-relaxed">
-                {contact.email}
               </p>
             </div>
           </Reveal>
