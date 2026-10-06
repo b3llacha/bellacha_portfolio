@@ -26,7 +26,7 @@ export default function Nav() {
         />
       </Link>
 
-      <nav aria-label="Primary" className="flex items-center gap-6 sm:gap-8 text-sm text-[#892F3C]">
+      <nav aria-label="Primary" className="flex items-center gap-6 sm:gap-8 text-sm text-coffee">
         {links.map((l) => (
           <Link key={l.href} href={l.href} className="link-draw">
             {l.label}

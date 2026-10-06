@@ -48,7 +48,7 @@ export default function Hero() {
               alt="Bella Cha"
               rotate="-2deg"
               colorIndex={2}
-              color="#892F3C"
+              color="#5B3A22"
               priority
             />
           </Reveal>
