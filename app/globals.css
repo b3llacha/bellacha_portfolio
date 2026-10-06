@@ -84,6 +84,22 @@ button,
   text-decoration: none;
 }
 
+/* Outside website links (the ones with ↗) grow a little on hover/focus.
+   Grows from the left edge by default; add origin-right for links that sit
+   at the right edge. */
+.link-pop {
+  display: inline-flex;
+  transform-origin: left center;
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.link-pop.origin-right {
+  transform-origin: right center;
+}
+.link-pop:hover,
+.link-pop:focus-visible {
+  transform: scale(1.12);
+}
+
 /* Faint grid paper texture */
 body {
   background-image: linear-gradient(#eee8da 1px, transparent 1px),

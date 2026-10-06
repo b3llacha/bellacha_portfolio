@@ -171,7 +171,7 @@ export default function ProjectPage({
                   href={item.link.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="link-draw inline-flex items-center gap-1 mt-3 text-sm font-medium text-ink-soft"
+                  className="link-draw link-pop inline-flex items-center gap-1 mt-3 text-sm font-medium text-ink-soft"
                 >
                   {item.link.label}
                   <span aria-hidden="true">↗</span>
@@ -251,7 +251,7 @@ export default function ProjectPage({
           href={s.link.href}
           target="_blank"
           rel="noreferrer"
-          className="link-draw inline-flex items-center gap-1 mt-4 text-sm font-medium text-ink-soft"
+          className="link-draw link-pop inline-flex items-center gap-1 mt-4 text-sm font-medium text-ink-soft"
         >
           {s.link.label}
           <span aria-hidden="true">↗</span>
@@ -401,7 +401,7 @@ export default function ProjectPage({
                   href={project.siteLink.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="link-draw inline-flex items-center gap-1 text-sm font-medium text-coffee"
+                  className="link-draw link-pop origin-right inline-flex items-center gap-1 text-sm font-medium text-coffee"
                 >
                   {project.siteLink.label}
                   <span aria-hidden="true">↗</span>

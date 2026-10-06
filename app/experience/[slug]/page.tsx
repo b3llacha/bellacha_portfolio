@@ -57,7 +57,7 @@ export default function ExperiencePage({
                 href={entry.summaryLink.href}
                 target="_blank"
                 rel="noreferrer"
-                className="link-draw inline-flex items-center gap-1 mt-3 text-sm font-medium text-ink-soft"
+                className="link-draw link-pop inline-flex items-center gap-1 mt-3 text-sm font-medium text-ink-soft"
               >
                 {entry.summaryLink.label}
                 <span aria-hidden="true">↗</span>
@@ -129,7 +129,7 @@ export default function ExperiencePage({
                 href={entry.galleryLink.href}
                 target="_blank"
                 rel="noreferrer"
-                className="link-draw text-sm font-medium text-ink-soft"
+                className="link-draw link-pop text-sm font-medium text-ink-soft"
               >
                 {entry.galleryLink.label}
               </a>
@@ -303,7 +303,7 @@ export default function ExperiencePage({
                           href={item.link.href}
                           target="_blank"
                           rel="noreferrer"
-                          className="link-draw inline-flex items-center gap-1 mt-3 text-sm font-medium text-ink-soft"
+                          className="link-draw link-pop inline-flex items-center gap-1 mt-3 text-sm font-medium text-ink-soft"
                         >
                           {item.link.label}
                           <span aria-hidden="true">↗</span>
@@ -418,7 +418,7 @@ export default function ExperiencePage({
                   href={s.link.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="link-draw inline-flex items-center gap-1 mt-4 text-sm font-medium text-ink-soft"
+                  className="link-draw link-pop inline-flex items-center gap-1 mt-4 text-sm font-medium text-ink-soft"
                 >
                   {s.link.label}
                   <span aria-hidden="true">↗</span>
