@@ -55,9 +55,9 @@ export default function Hero() {
 
         {/* Middle column — text + details grid, now sitting right next to
             the intro instead of across a gap */}
-        <div className="lg:pl-6">
+        <div className="lg:pl-6 pt-3 sm:pt-6">
           <Reveal>
-            <p className="text-sm sm:text-base font-display font-medium leading-snug max-w-md text-coffee">
+            <p className="text-[15px] sm:text-[17px] font-display font-medium leading-snug max-w-md text-coffee">
               {
                 "I design thoughtful digital experiences at the intersection of product, consumer behavior, and visual storytelling."
               }
@@ -69,32 +69,32 @@ export default function Hero() {
             className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8"
           >
             <div>
-              <h2 className="eyebrow mb-2">education</h2>
-              <p className="text-ink-soft text-sm leading-relaxed">
+              <h2 className="eyebrow !text-[13px] mb-2">education</h2>
+              <p className="text-ink-soft text-[15px] leading-relaxed">
                 {education[0].place} &middot; {education[0].role}
               </p>
             </div>
             <div>
-              <h2 className="eyebrow mb-2">focus</h2>
-              <p className="text-ink-soft text-sm leading-relaxed">
+              <h2 className="eyebrow !text-[13px] mb-2">focus</h2>
+              <p className="text-ink-soft text-[15px] leading-relaxed">
                 {focus.join(" · ")}
               </p>
             </div>
             <div>
-              <h2 className="eyebrow mb-2">experience</h2>
-              <p className="text-ink-soft text-sm leading-relaxed">
+              <h2 className="eyebrow !text-[13px] mb-2">experience</h2>
+              <p className="text-ink-soft text-[15px] leading-relaxed">
                 {experience.map((e) => e.place).join(" · ")}
               </p>
             </div>
             <div>
-              <h2 className="eyebrow mb-2">toolkit</h2>
-              <p className="text-ink-soft text-sm leading-relaxed">
+              <h2 className="eyebrow !text-[13px] mb-2">toolkit</h2>
+              <p className="text-ink-soft text-[15px] leading-relaxed">
                 {toolkit.join(" · ")}
               </p>
             </div>
             <div className="sm:col-span-2">
-              <h2 className="eyebrow mb-2">say hi</h2>
-              <p className="text-ink-soft text-sm leading-relaxed">
+              <h2 className="eyebrow !text-[13px] mb-2">say hi</h2>
+              <p className="text-ink-soft text-[15px] leading-relaxed">
                 {contact.email}
               </p>
             </div>
