@@ -75,7 +75,7 @@ export default function AboutPage() {
 
         <Reveal delay={160} className="mt-16">
           <h2 className="eyebrow mb-4">experience</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {experience.map((e) => (
               <Link
                 key={e.slug}
