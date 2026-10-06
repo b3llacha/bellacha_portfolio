@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const links = [
-  { href: "/work", label: "work" },
-  { href: "/experience", label: "experience" },
   { href: "/about", label: "about" },
   { href: "/archive", label: "archive" },
   { href: "/contact", label: "contact" },
@@ -27,6 +25,25 @@ export default function Nav() {
       </Link>
 
       <nav aria-label="Primary" className="flex items-center gap-6 sm:gap-8 text-sm text-coffee">
+        {/* "work" groups experience + projects in one dropdown (opens on
+            hover or keyboard/tap focus) */}
+        <div className="relative group">
+          <span
+            tabIndex={0}
+            className="cursor-pointer inline-flex items-center gap-1 outline-none"
+          >
+            work
+            <svg viewBox="0 0 10 6" className="w-2 h-1.5" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path d="M1 1l4 4 4-4" />
+            </svg>
+          </span>
+          <div className="absolute left-0 top-full pt-2 hidden group-hover:block group-focus-within:block z-20">
+            <div className="rounded-xl border border-line bg-paper px-5 py-3 shadow-[0_4px_20px_rgba(0,0,0,0.06)] flex flex-col gap-2 min-w-[120px]">
+              <Link href="/experience" className="link-draw w-fit">experience</Link>
+              <Link href="/work" className="link-draw w-fit">projects</Link>
+            </div>
+          </div>
+        </div>
         {links.map((l) => (
           <Link key={l.href} href={l.href} className="link-draw">
             {l.label}
