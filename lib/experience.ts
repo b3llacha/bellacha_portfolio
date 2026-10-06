@@ -43,7 +43,7 @@ export const experience: Experience[] = [
   {
     slug: "hyundai-corporation",
     place: "Hyundai Corporation",
-    role: "Business Development & Marketing Intern — Health & Beauty",
+    role: "Business Development & Marketing Intern",
     period: "Feb 2026 — May 2026",
     summary:
       "Global expansion work for Korean beauty and wellness brands — market research, buyer outreach, and localized launch strategy across Europe and Latin America — that built a pipeline of 300+ buyers and 10 partnerships.",
