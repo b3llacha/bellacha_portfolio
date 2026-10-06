@@ -29,7 +29,7 @@ export default function AboutPreview() {
               href={`/experience/${e.slug}`}
               className="group block rounded-2xl border border-coffee/15 p-5 h-full hover:shadow-[0_2px_24px_rgba(0,0,0,0.06)] transition-[background-color,box-shadow] hover:bg-coffee/10"
             >
-              <p className="font-display font-bold text-base text-coffee group-hover:underline decoration-1 underline-offset-4">
+              <p className="font-display font-bold text-base text-coffee">
                 {e.place}
               </p>
               <p className="text-sm text-ink-soft mt-1">{e.role}</p>

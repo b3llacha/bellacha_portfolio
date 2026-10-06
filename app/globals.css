@@ -77,28 +77,9 @@ button,
   transform: translateY(0);
 }
 
-/* Underline draw on hover */
 .link-draw {
   position: relative;
   text-decoration: none;
-}
-
-.link-draw::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 1px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.link-draw:hover::after,
-.link-draw:focus-visible::after {
-  transform: scaleX(1);
 }
 
 /* Faint grid paper texture */
