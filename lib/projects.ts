@@ -15,6 +15,13 @@ export type Project = {
   /** Optional longer headline for the project's own page, in place of
    * `title` (which still shows on the project cards). */
   pageTitle?: string;
+  /** Optional big full-width click-through carousel of the final design. */
+  showcase?: GalleryImage[];
+  /** Heading of the section the showcase carousel sits right before (e.g.
+   * "Outcome"); without it the carousel follows all the sections. */
+  showcaseBefore?: string;
+  /** Overrides the small label above the showcase (default "final design"). */
+  showcaseLabel?: string;
   image: string;
   imageAlt: string;
   size: "large" | "small";
@@ -58,14 +65,22 @@ export const projects: Project[] = [
     year: "2025",
     description:
       "A site redesign for a UC Berkeley student publication, focused on content organization and visual consistency so readers can move through articles more easily.",
-    image:
-      "https://framerusercontent.com/images/aJbUzjJOyv1p9xQ9cwBtxzMc7o.png",
-    imageAlt: "TAUG Magazine website redesign",
+    image: "/images/taug/redesign/05-issues.jpg",
+    imageAlt: "TAUG website redesign — issues page with a grid of magazine covers",
     size: "small",
     pageTitle: "To An Unknown God — Website Redesign",
     // Empty on purpose: the page title already says "Website Redesign", and
     // the Overview section below carries the intro.
     intro: "",
+    showcaseBefore: "Outcome",
+    showcase: [
+      { src: "/images/taug/redesign/01-home-hero.jpg", alt: "TAUG home page — full-bleed landscape hero announcing the 2025–2026 theme, Devotion, with a View Issue button" },
+      { src: "/images/taug/redesign/02-home-about.jpg", alt: "TAUG home page — 'Est. 2008' introduction to To An Unknown God beside a photo of printed issues" },
+      { src: "/images/taug/redesign/03-join-the-team.jpg", alt: "TAUG home page — Join the Team section with a recruiting message, Join Us button, and team photo" },
+      { src: "/images/taug/redesign/04-the-blog.jpg", alt: "TAUG home page — The Blog section inviting students to contribute posts" },
+      { src: "/images/taug/redesign/05-issues.jpg", alt: "TAUG issues page — grid of magazine covers to flip through online" },
+      { src: "/images/taug/redesign/06-blog-post.jpg", alt: "TAUG blog post page — 'I Thirst' with a black-and-white photograph" },
+    ],
     sections: [
       {
         heading: "Overview",
