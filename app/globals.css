@@ -128,3 +128,54 @@ body {
   background: #eae6dc;
   border: 2px solid var(--paper);
 }
+
+/* Project cards: on hover they lift, grow and tilt toward the cursor in 3D,
+   with a glossy highlight and bevelled edge so the surface reads as rounded.
+   See components/TiltCard.tsx. */
+.tilt-wrap {
+  perspective: 900px;
+}
+.tilt-card {
+  border-radius: 1rem;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(0) scale(1);
+  box-shadow: 0 1px 2px rgba(91, 58, 34, 0.04);
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+.tilt-card[data-tilt="on"] {
+  transition: transform 0.12s ease-out, box-shadow 0.4s ease-out;
+}
+.tilt-card:hover,
+.tilt-card:focus-within {
+  transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(-8px) scale(1.05);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -3px 8px rgba(91, 58, 34, 0.06),
+    0 10px 20px -8px rgba(91, 58, 34, 0.18),
+    0 28px 48px -16px rgba(91, 58, 34, 0.22);
+}
+.tilt-gloss {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(
+    circle at var(--gx, 50%) var(--gy, 0%),
+    rgba(255, 255, 255, 0.45),
+    rgba(255, 255, 255, 0) 55%
+  );
+  mix-blend-mode: soft-light;
+  transition: opacity 0.4s ease;
+}
+.tilt-card:hover .tilt-gloss {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tilt-card:hover,
+  .tilt-card:focus-within {
+    transform: none;
+  }
+}
