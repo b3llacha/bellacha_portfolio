@@ -11,6 +11,7 @@ import { Patch } from "@/components/Patch";
 import { RegionsMap } from "@/components/RegionsMap";
 import { MarketMatrix } from "@/components/MarketMatrix";
 import { SlideDeck } from "@/components/SlideDeck";
+import { AutoCarousel } from "@/components/AutoCarousel";
 import { projects } from "@/lib/projects";
 import type { Section } from "@/lib/types";
 
@@ -305,18 +306,23 @@ export default function ProjectPage({
         </Reveal>
       </section>
 
-      <Reveal className="px-6 sm:px-10 lg:px-14">
-        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden">
-          <Image
-            src={project.image}
-            alt={project.imageAlt}
-            fill
-            sizes="100vw"
-            className="object-cover"
-            priority
-          />
-        </div>
-      </Reveal>
+      {/* The cover image doubles as the card thumbnail. Projects with a
+          showcase carousel skip it here, since the carousel already shows
+          the work. */}
+      {!hasShowcase && (
+        <Reveal className="px-6 sm:px-10 lg:px-14">
+          <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden">
+            <Image
+              src={project.image}
+              alt={project.imageAlt}
+              fill
+              sizes="100vw"
+              className="object-cover"
+              priority
+            />
+          </div>
+        </Reveal>
+      )}
 
       {project.videos && project.videos.length > 0 && (
         <section className="relative px-6 sm:px-10 lg:px-14 pt-16 sm:pt-24 overflow-hidden">
@@ -368,7 +374,7 @@ export default function ProjectPage({
 
       {sectionsAbove.length > 0 && (
         <section
-          className={`px-6 sm:px-10 lg:px-14 pt-16 sm:pt-24 ${hasShowcase ? "pb-4" : "pb-16 sm:pb-24"} sm:columns-2 gap-x-16`}
+          className={`px-6 sm:px-10 lg:px-14 ${hasShowcase ? "pt-6 pb-4" : "pt-16 sm:pt-24 pb-16 sm:pb-24"} sm:columns-2 gap-x-16`}
         >
           {sectionsAbove.map(renderSection)}
         </section>
@@ -378,11 +384,7 @@ export default function ProjectPage({
         <section className="px-6 sm:px-10 lg:px-14 py-8 sm:py-10">
           <Reveal>
             <p className="eyebrow mb-4">{project.showcaseLabel ?? "final design"}</p>
-            <SlideDeck
-              slides={project.showcase!}
-              aspectClassName="aspect-[16/10]"
-              sizes="(max-width: 1024px) 95vw, 1200px"
-            />
+            <AutoCarousel slides={project.showcase!} />
           </Reveal>
         </section>
       )}

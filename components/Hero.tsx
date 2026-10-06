@@ -2,7 +2,7 @@ import Reveal from "./Reveal";
 import { Patch } from "./Patch";
 import { Polaroid } from "./Polaroid";
 import PolaroidPile from "./PolaroidPile";
-import { LinkedInIcon, MailIcon } from "./SocialIcons";
+import { LinkedInIcon } from "./SocialIcons";
 import { education, focus, toolkit, contact } from "@/lib/about";
 import { experience } from "@/lib/experience";
 
@@ -26,13 +26,6 @@ export default function Hero() {
               className="w-9 h-9 rounded-full bg-coffee text-paper flex items-center justify-center hover:opacity-80 transition-opacity"
             >
               <LinkedInIcon />
-            </a>
-            <a
-              href={`mailto:${contact.email}`}
-              aria-label="Email"
-              className="w-9 h-9 rounded-full border border-coffee text-coffee flex items-center justify-center hover:bg-pill transition-colors"
-            >
-              <MailIcon />
             </a>
           </Reveal>
 
