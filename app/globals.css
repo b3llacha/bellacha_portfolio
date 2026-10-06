@@ -18,13 +18,15 @@ html {
 body {
   background-color: var(--paper);
   color: var(--ink);
-  cursor: url("/cursor-bear.png") 5 5, auto;
+  cursor: url("/cursor-bear.png") 8 8, auto;
+  cursor: -webkit-image-set(url("/cursor-bear.png") 1x, url("/cursor-bear@2x.png") 2x) 8 8, auto;
 }
 
 a,
 button,
 [role="button"] {
-  cursor: url("/cursor-bear.png") 5 5, pointer;
+  cursor: url("/cursor-bear.png") 8 8, pointer;
+  cursor: -webkit-image-set(url("/cursor-bear.png") 1x, url("/cursor-bear@2x.png") 2x) 8 8, pointer;
 }
 
 @media (prefers-reduced-motion: reduce) {
