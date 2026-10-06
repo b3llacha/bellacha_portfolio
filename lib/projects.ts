@@ -126,7 +126,7 @@ export const projects: Project[] = [
     category: "Case Study",
     year: "2026",
     description:
-      "A collection of app case studies and website redesigns exploring how thoughtful UX, visual hierarchy, and brand strategy can create clearer, more engaging digital experiences. Featuring Beli, Duolingo, Disney+, and Trü Frü.",
+      "App case studies and redesigns exploring how UX, visual hierarchy, and brand strategy create clearer digital experiences — featuring Beli, Duolingo, Disney+, and Trü Frü.",
     image:
       "https://framerusercontent.com/images/iEXYGyDIfcXiBvIP7jlSxH16p3Y.png",
     imageAlt: "Tea Palette case study series",
