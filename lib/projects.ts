@@ -52,10 +52,71 @@ export const projects: Project[] = [
     year: "2026",
     description:
       "A website redesign for a student-led apparel brand, built in collaboration with developers to create a cleaner, more cohesive shopping experience — from layout and visual hierarchy to navigation and checkout flow.",
-    image:
-      "https://framerusercontent.com/images/DL8wj3XvVsvjEu504R9gQRbwYc.png",
-    imageAlt: "Spero Apparel website redesign",
+    image: "/images/spero/redesign/01-to-hope.jpg",
+    imageAlt: "Spero website redesign — “to hope.” brand statement in large serif type",
     size: "large",
+    pageTitle: "Spero Apparel — Website Redesign",
+    // Empty on purpose: the page title already says "Website Redesign", and
+    // the Overview section below carries the intro.
+    intro: "",
+    sections: [
+      {
+        heading: "Overview",
+        body: [
+          "Redesigned the website for Spero, a student-run, gospel-centered apparel project creating clothing inspired by scripture. The goal was to build a stronger brand experience despite having a smaller product catalog than traditional apparel brands.",
+        ],
+        link: { label: "shopspero.org", href: "https://www.shopspero.org/" },
+      },
+      {
+        heading: "Problem",
+        body: [
+          "As a student-run brand, Spero had a limited number of products, which made a traditional product-heavy e-commerce layout feel sparse. The website needed to feel visually complete without overwhelming users or making the small collection feel like a limitation.",
+        ],
+      },
+      {
+        heading: "Audience",
+        body: [
+          "College students and young adults interested in faith, fashion, and meaningful apparel.",
+        ],
+      },
+      {
+        heading: "Goal",
+        body: [
+          {
+            list: [
+              "Make the shopping experience simple and intuitive",
+              "Use photoshoots and lifestyle imagery to create a fuller brand experience",
+              "Showcase each collection beyond just product listings",
+              "Communicate Spero’s mission and identity clearly",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Design Approach",
+        body: [
+          "I used photography as a central part of the website, allowing each piece to feel connected to a larger story and visual identity. I also simplified navigation and product discovery so users could easily move between the brand story, designs, and shop.",
+        ],
+        link: { label: "shopspero.org", href: "https://www.shopspero.org/" },
+      },
+      {
+        heading: "Outcome",
+        body: [
+          "The final site feels less like a small student shop and more like a cohesive apparel brand—using strong imagery, storytelling, and a straightforward shopping experience to make a limited collection feel intentional rather than sparse.",
+        ],
+      },
+    ],
+    showcaseBefore: "Outcome",
+    showcase: [
+      { src: "/images/spero/redesign/01-to-hope.jpg", alt: "Spero site — “to hope.” brand statement with the vision behind the name" },
+      { src: "/images/spero/redesign/02-mission.jpg", alt: "Spero site — Our Mission section over a photo of a printed T-shirt back" },
+      { src: "/images/spero/redesign/03-partners.jpg", alt: "Spero site — Our Partners section, “Giving with intention,” with partner logos" },
+      { src: "/images/spero/redesign/04-home-hero.jpg", alt: "Spero site — God Is Love collection hero over a picnic photoshoot" },
+      { src: "/images/spero/redesign/05-collections.jpg", alt: "Spero site — crewneck and T-shirt collection lifestyle photos" },
+      { src: "/images/spero/redesign/06-product-page.jpg", alt: "Spero site — “God Is Love” T-shirt product page with size and delivery options" },
+      { src: "/images/spero/redesign/07-product-details.jpg", alt: "Spero site — product details carousel with verse, composition, fit, and colorway" },
+      { src: "/images/spero/redesign/08-faq.jpg", alt: "Spero site — Frequently Asked questions accordion" },
+    ],
   },
   {
     slug: "taug-magazine",
