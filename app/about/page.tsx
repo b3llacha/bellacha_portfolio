@@ -19,7 +19,7 @@ export default function AboutPage() {
         <Patch name="star-purple" size={30} rotate="10deg" style={{ bottom: "10%", left: "4%" }} />
         <Reveal>
           <p className="eyebrow">about me</p>
-          <h1 className="font-display font-extrabold text-coffee text-2xl sm:text-3xl mt-1 max-w-2xl">
+          <h1 className="font-display font-extrabold text-coffee text-base sm:text-xl mt-1 max-w-2xl">
             {bio.intro}
           </h1>
         </Reveal>
