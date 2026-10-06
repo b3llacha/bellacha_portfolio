@@ -11,6 +11,9 @@ export type Experience = {
   summaryLink?: { label: string; href: string };
   /** 4-5 short bullet points shown on this entry's card in the experience list. */
   highlights?: string[];
+  /** Small polaroid that slides up from behind this entry's homepage card on
+   * hover. `position` is a CSS object-position for cropping (e.g. "left"). */
+  peek?: { src: string; alt: string; position?: string };
   image?: string;
   imageAlt?: string;
   /** Set to false to hide the "case notes" section — used for entries
@@ -44,6 +47,7 @@ export type Experience = {
 export const experience: Experience[] = [
   {
     slug: "hyundai-corporation",
+    peek: { src: "/images/hyundai-csquare/lemon-deck/slide-01.jpg", alt: "TONYMOLY I\u2019m Lemon creator campaign deck", position: "18% center" },
     place: "Hyundai Corporation",
     role: "Business Development & Marketing Intern",
     period: "Feb 2026 — May 2026",
@@ -139,6 +143,7 @@ export const experience: Experience[] = [
   },
   {
     slug: "jungsaemmool-beauty",
+    peek: { src: "/images/jungsaemmool/filming/filming-01.jpg", alt: "Behind the scenes at a JUNGSAEMMOOL content shoot" },
     place: "JUNGSAEMMOOL Beauty",
     role: "Global Marketing Intern",
     period: "Aug 2025 — Nov 2025",
@@ -276,6 +281,7 @@ export const experience: Experience[] = [
   },
   {
     slug: "spero-apparel",
+    peek: { src: "/images/spero/social/post-06.jpg", alt: "Spero team picnic photoshoot" },
     place: "Spero Apparel",
     role: "UI/UX Designer & Social Media Manager",
     period: "Jan 2025 — Present",
@@ -330,6 +336,7 @@ export const experience: Experience[] = [
   },
   {
     slug: "taug-magazine",
+    peek: { src: "/images/taug/covers/cover-memory.jpg", alt: "TAUG Magazine Memory issue cover" },
     place: "TAUG Magazine",
     role: "Magazine Designer, UI/UX Designer & Social Media Manager",
     period: "Jan 2025 — Present",

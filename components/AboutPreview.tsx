@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { polaroidColors } from "./polaroidColors";
 import { experience } from "@/lib/experience";
 import Reveal from "./Reveal";
 import { Patch } from "./Patch";
@@ -24,17 +26,41 @@ export default function AboutPreview() {
 
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
         {experience.map((e, i) => (
-          <Reveal key={e.slug} delay={i * 50}>
-            <Link
-              href={`/experience/${e.slug}`}
-              className="group block rounded-2xl border border-coffee/15 p-5 h-full hover:shadow-[0_2px_24px_rgba(0,0,0,0.06)] transition-[background-color,box-shadow] hover:bg-coffee/10"
-            >
-              <p className="font-display font-bold text-base text-coffee">
-                {e.place}
-              </p>
-              <p className="text-sm text-ink-soft mt-1">{e.role}</p>
-              <p className="text-xs text-ink-faint mt-2">{e.period}</p>
-            </Link>
+          <Reveal key={e.slug} delay={i * 50} className="relative hover:z-20 focus-within:z-20">
+            <div className="group relative h-full">
+              {/* Polaroid tucked behind the card; slides up on hover */}
+              {e.peek && (
+                <div
+                  aria-hidden="true"
+                  className="peek-polaroid pointer-events-none absolute right-6 top-0 z-0 hidden sm:block"
+                  style={{ ["--tape" as string]: polaroidColors[i % polaroidColors.length] }}
+                >
+                  <span className="peek-tape" />
+                  <div className="rounded-[3px] bg-[#fffdf9] p-1.5 pb-4 shadow-[0_6px_18px_rgba(91,58,34,0.18)]">
+                    <div className="relative w-[92px] aspect-[4/5] overflow-hidden">
+                      <Image
+                        src={e.peek.src}
+                        alt=""
+                        fill
+                        sizes="92px"
+                        className="object-cover"
+                        style={e.peek.position ? { objectPosition: e.peek.position } : undefined}
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
+              <Link
+                href={`/experience/${e.slug}`}
+                className="relative z-10 block rounded-2xl border border-coffee/15 p-5 h-full bg-[#F8F5EE] hover:shadow-[0_2px_24px_rgba(0,0,0,0.06)] transition-[background-color,box-shadow] hover:bg-[#E8E2DA]"
+              >
+                <p className="font-display font-bold text-base text-coffee">
+                  {e.place}
+                </p>
+                <p className="text-sm text-ink-soft mt-1">{e.role}</p>
+                <p className="text-xs text-ink-faint mt-2">{e.period}</p>
+              </Link>
+            </div>
           </Reveal>
         ))}
       </div>
