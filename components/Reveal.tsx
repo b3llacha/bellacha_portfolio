@@ -10,7 +10,7 @@ export default function Reveal({
 }: {
   children: React.ReactNode;
   delay?: number;
-  as?: keyof JSX.IntrinsicElements;
+  as?: "div" | "section" | "article" | "li" | "span";
   className?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
