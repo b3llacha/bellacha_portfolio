@@ -25,6 +25,9 @@ export default function Nav() {
       </Link>
 
       <nav aria-label="Primary" className="flex items-center gap-6 sm:gap-8 text-sm text-coffee">
+        <Link href="/" className="link-draw">
+          home
+        </Link>
         {/* "work" groups experience + projects in one dropdown (opens on
             hover or keyboard/tap focus) */}
         <div className="relative group">
