@@ -304,6 +304,7 @@ export const experience: Experience[] = [
           { src: "/images/spero/web/07-faq.jpg", alt: "Spero Apparel website — frequently asked questions" },
         ],
         link: { label: "Spero Apparel Website", href: "https://www.shopspero.org/" },
+        moreLink: { label: "more in projects", href: "/work/spero-apparel" },
       },
       {
         heading: "Social Media",
@@ -353,6 +354,7 @@ export const experience: Experience[] = [
           { src: "/images/taug/web/web-issues.jpg", alt: "TAUG Magazine website — issues page" },
         ],
         link: { label: "TAUG Website", href: "https://toanunknowngod.weebly.com/" },
+        moreLink: { label: "more in projects", href: "/work/taug-magazine" },
       },
       {
         heading: "Magazine Design",

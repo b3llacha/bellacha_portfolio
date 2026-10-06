@@ -36,6 +36,9 @@ export type Section = {
   slidesMaxWidthClassName?: string;
   /** Optional live link shown under this section's images (e.g. the site itself). */
   link?: { label: string; href: string };
+  /** Optional link to a page on this site (e.g. the matching project case
+   * study), shown next to `link`. */
+  moreLink?: { label: string; href: string };
   /** Headline numbers shown as a row of stat cards under this section's text. */
   stats?: { value: string; label: string }[];
   /** Names a custom illustration to render inline within this section. */

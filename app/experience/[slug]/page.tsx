@@ -413,16 +413,29 @@ export default function ExperiencePage({
                   })}
                 </div>
               )}
-              {s.link && (
-                <a
-                  href={s.link.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="link-draw link-pop inline-flex items-center gap-1 mt-4 text-sm font-medium text-ink-soft"
-                >
-                  {s.link.label}
-                  <span aria-hidden="true">↗</span>
-                </a>
+              {(s.link || s.moreLink) && (
+                <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2">
+                  {s.link && (
+                    <a
+                      href={s.link.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link-draw link-pop inline-flex items-center gap-1 text-sm font-medium text-ink-soft"
+                    >
+                      {s.link.label}
+                      <span aria-hidden="true">↗</span>
+                    </a>
+                  )}
+                  {s.moreLink && (
+                    <Link
+                      href={s.moreLink.href}
+                      className="link-draw link-pop inline-flex items-center gap-1 text-sm font-medium text-coffee"
+                    >
+                      {s.moreLink.label}
+                      <span aria-hidden="true">→</span>
+                    </Link>
+                  )}
+                </div>
               )}
               {s.stats && s.stats.length > 0 && (
                 <div className="mt-6 grid grid-cols-2 gap-4">
