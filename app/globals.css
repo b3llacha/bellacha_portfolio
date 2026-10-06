@@ -48,7 +48,7 @@ button,
 
 /* Small monospace eyebrow label */
 .eyebrow {
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, 'Space Mono'), ui-monospace, monospace;
   font-size: 0.75rem;
   color: #6b4a32;
   letter-spacing: 0.01em;

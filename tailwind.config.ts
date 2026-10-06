@@ -26,9 +26,12 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["var(--font-display)", "Helvetica", "Arial", "sans-serif"],
-        sans: ["var(--font-inter)", "Helvetica", "Arial", "sans-serif"],
-        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+        // Each var() carries its own fallback: if a Google font ever fails
+        // to load, the variable is missing, and without a fallback inside
+        // var() the whole stack breaks and browsers drop to Times New Roman.
+        display: ["var(--font-display, Sora)", "Helvetica", "Arial", "sans-serif"],
+        sans: ["var(--font-inter, Inter)", "Helvetica", "Arial", "sans-serif"],
+        mono: ["var(--font-mono, 'Space Mono')", "ui-monospace", "monospace"],
       },
       fontSize: {
         micro: ["0.6875rem", { lineHeight: "1.3", letterSpacing: "0.04em" }],
