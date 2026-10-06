@@ -36,7 +36,7 @@ export const projects: Project[] = [
     number: "01",
     title: "Spero Apparel",
     category: "Web Design",
-    year: "2025",
+    year: "2026",
     description:
       "A website redesign for a student-led apparel brand, built in collaboration with developers to create a cleaner, more cohesive shopping experience — from layout and visual hierarchy to navigation and checkout flow.",
     image:
