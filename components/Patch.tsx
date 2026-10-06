@@ -10,6 +10,10 @@ const patches: Record<PatchName, { src: string; alt: string }> = {
   "star-purple": { src: "/images/patches/star-purple.png", alt: "" },
 };
 
+const sizeBoost: Partial<Record<PatchName, number>> = {
+  cloud: 1.9,
+};
+
 /** A single scattered fabric-patch decoration, absolutely positioned within
  * a relative parent — same placement pattern as the Doodle SVG icons, just
  * rendered as a small stitched-patch image instead of a line drawing. */
@@ -27,13 +31,16 @@ export function Patch({
   style?: React.CSSProperties;
 }) {
   const patch = patches[name];
+  // The cloud artwork only fills about half of its square image (the others
+  // fill ~80%), so it's drawn larger to look the same size as the rest.
+  const drawn = Math.round(size * (sizeBoost[name] ?? 1));
   return (
     <span
       aria-hidden="true"
       className={`doodle hidden md:block ${className}`}
       style={{ ...style, transform: `rotate(${rotate})` }}
     >
-      <Image src={patch.src} alt={patch.alt} width={size} height={size} className="object-contain" />
+      <Image src={patch.src} alt={patch.alt} width={drawn} height={drawn} className="object-contain" />
     </span>
   );
 }
