@@ -209,11 +209,6 @@ export const experience: Experience[] = [
         body: [
           "This experience showed me how a global campaign actually comes together — from major retail moments and a flagship store opening, to the localized content and messaging that make a brand feel native in a new market, to the community-building that keeps people engaged after the campaign ends.",
         ],
-        stats: [
-          { value: "+16K", label: "Follower Growth" },
-          { value: "5+", label: "Retail & Event Launches" },
-          { value: "3", label: "Month Campaign Window" },
-        ],
       },
       {
         heading: "Influencer, Social & Content Marketing",
