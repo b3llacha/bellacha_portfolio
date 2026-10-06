@@ -17,7 +17,7 @@ export default function AboutPreview() {
             experience
           </h2>
         </div>
-        <Link href="/about" className="link-draw text-sm font-medium">
+        <Link href="/about" className="text-coffee text-sm font-medium inline-block origin-right transition-transform duration-200 hover:scale-110">
           read full profile &rarr;
         </Link>
       </Reveal>

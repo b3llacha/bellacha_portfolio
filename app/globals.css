@@ -18,13 +18,13 @@ html {
 body {
   background-color: var(--paper);
   color: var(--ink);
-  cursor: url("/cursor-bear.png") 16 16, auto;
+  cursor: url("/cursor-bear.png") 5 5, auto;
 }
 
 a,
 button,
 [role="button"] {
-  cursor: url("/cursor-bear.png") 16 16, pointer;
+  cursor: url("/cursor-bear.png") 5 5, pointer;
 }
 
 @media (prefers-reduced-motion: reduce) {
