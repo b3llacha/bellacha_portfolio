@@ -55,7 +55,7 @@ export default function Hero() {
 
         {/* Middle column — text + details grid, now sitting right next to
             the intro instead of across a gap */}
-        <div className="lg:pl-6 pt-3 sm:pt-6">
+        <div className="lg:pl-6 pt-3 sm:pt-6 lg:pt-[70px]">
           <Reveal>
             <p className="text-[15px] sm:text-[17px] font-display font-medium leading-snug max-w-md text-coffee">
               {
