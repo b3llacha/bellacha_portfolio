@@ -3,6 +3,7 @@ import Nav from "@/components/Nav";
 import Reveal from "@/components/Reveal";
 import { Patch } from "@/components/Patch";
 import { contact } from "@/lib/about";
+import { LinkedInIcon } from "@/components/SocialIcons";
 
 export const metadata: Metadata = {
   title: "Contact — Bella Cha",
@@ -18,21 +19,27 @@ export default function ContactPage() {
         <Patch name="star-purple" size={30} rotate="10deg" style={{ bottom: "10%", left: "6%" }} />
         <Reveal>
           <p className="eyebrow">contact</p>
-          <p className="max-w-lg text-lg sm:text-xl text-ink-soft leading-relaxed mt-3 mb-10">
+          <p className="text-sm sm:text-base sm:whitespace-nowrap text-ink-soft leading-relaxed mt-3 mb-10">
             Whether it&rsquo;s a project or just a conversation about design,
             I&rsquo;d be happy to connect.
           </p>
           <a
             href={`mailto:${contact.email}`}
-            className="group block font-display font-extrabold text-coffee text-[12vw] sm:text-6xl lg:text-7xl leading-[0.95] link-draw"
+            className="group block font-display font-extrabold text-coffee text-[6vw] sm:text-3xl lg:text-4xl leading-[0.95] link-draw"
           >
             {contact.email}
           </a>
         </Reveal>
 
-        <Reveal delay={100} className="mt-14 flex flex-wrap gap-x-8 gap-y-3 text-sm">
-          <a href={contact.linkedin} target="_blank" rel="noreferrer" className="link-draw">
-            linkedin
+        <Reveal delay={100} className="mt-14 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm">
+          <a
+            href={contact.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            className="w-9 h-9 rounded-full bg-coffee text-paper flex items-center justify-center hover:opacity-80 transition-opacity"
+          >
+            <LinkedInIcon />
           </a>
           <a href={`mailto:${contact.email}`} className="link-draw">
             email
