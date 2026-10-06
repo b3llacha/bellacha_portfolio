@@ -27,9 +27,9 @@ export default function AboutPreview() {
           <Reveal key={e.slug} delay={i * 50}>
             <Link
               href={`/experience/${e.slug}`}
-              className="group block rounded-2xl bg-[#FDF6E3] border border-[#F3E7C6] p-5 h-full hover:shadow-[0_2px_24px_rgba(0,0,0,0.06)] transition-shadow"
+              className="group block rounded-2xl bg-transparent border border-[#F3E7C6] p-5 h-full hover:shadow-[0_2px_24px_rgba(0,0,0,0.06)] transition-shadow"
             >
-              <p className="font-display font-bold text-base group-hover:underline decoration-1 underline-offset-4">
+              <p className="font-display font-bold text-base text-[#90003C] group-hover:underline decoration-1 underline-offset-4">
                 {e.place}
               </p>
               <p className="text-sm text-ink-soft mt-1">{e.role}</p>
