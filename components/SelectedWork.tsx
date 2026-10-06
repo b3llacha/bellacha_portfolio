@@ -3,7 +3,7 @@ import Link from "next/link";
 import TiltCard from "@/components/TiltCard";
 import { projects } from "@/lib/projects";
 import Reveal from "./Reveal";
-import { Coffee } from "./Doodle";
+import { Flower } from "./Doodle";
 import { Patch } from "./Patch";
 
 export default function SelectedWork() {
@@ -54,7 +54,7 @@ export default function SelectedWork() {
 
       <Reveal delay={200} className="mt-10">
         <Link href="/work" className="text-coffee text-sm font-medium inline-flex items-center gap-2 origin-left transition-transform duration-200 hover:scale-110">
-          <Coffee className="text-coffee" />
+          <Flower className="text-coffee" />
           see all projects
         </Link>
       </Reveal>

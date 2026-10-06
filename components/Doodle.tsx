@@ -79,6 +79,21 @@ export function Coffee({ className, size = 24 }: IconProps) {
   );
 }
 
+export function Flower({ className, size = 24 }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" className={className} stroke="currentColor" {...base}>
+      <ellipse cx="12" cy="4.7" rx="1.8" ry="2.3" transform="rotate(0 12 8.6)" />
+      <ellipse cx="12" cy="4.7" rx="1.8" ry="2.3" transform="rotate(72 12 8.6)" />
+      <ellipse cx="12" cy="4.7" rx="1.8" ry="2.3" transform="rotate(144 12 8.6)" />
+      <ellipse cx="12" cy="4.7" rx="1.8" ry="2.3" transform="rotate(216 12 8.6)" />
+      <ellipse cx="12" cy="4.7" rx="1.8" ry="2.3" transform="rotate(288 12 8.6)" />
+      <circle cx="12" cy="8.6" r="1.2" />
+      <path d="M12 13c0 2.5.2 4.6.7 6.8" />
+      <path d="M12.5 17.6c1-1.5 2.6-2.1 4-1.7-.6 1.5-2.2 2.2-4 1.7Z" />
+    </svg>
+  );
+}
+
 export function Sailboat({ className, size = 24 }: IconProps) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" className={className} stroke="currentColor" {...base}>
