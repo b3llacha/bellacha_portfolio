@@ -126,7 +126,7 @@ export const projects: Project[] = [
     category: "Case Study",
     year: "2026",
     description:
-      "An ongoing case-study series breaking down consumer apps — Beli, Apple Maps, ChatGPT — and pairing each teardown with a redesigned Figma concept.",
+      "A collection of app case studies and website redesigns exploring how thoughtful UX, visual hierarchy, and brand strategy can create clearer, more engaging digital experiences. Featuring Beli, Duolingo, Disney+, and Trü Frü.",
     image:
       "https://framerusercontent.com/images/iEXYGyDIfcXiBvIP7jlSxH16p3Y.png",
     imageAlt: "Tea Palette case study series",
