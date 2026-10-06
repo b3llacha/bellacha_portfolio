@@ -330,7 +330,7 @@ export const experience: Experience[] = [
   {
     slug: "taug-magazine",
     place: "TAUG Magazine",
-    role: "UI/UX Designer",
+    role: "Magazine Designer, UI/UX Designer & Social Media Manager",
     period: "Jan 2025 — Present",
     summary: "UI/UX design for TAUG Magazine, a UC Berkeley student publication.",
     highlights: [
