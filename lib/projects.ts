@@ -120,8 +120,21 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "taug-magazine",
+    slug: "tea-palette",
     number: "02",
+    title: "Tea Palette",
+    category: "Case Study",
+    year: "2026",
+    description:
+      "An ongoing case-study series breaking down consumer apps — Beli, Apple Maps, ChatGPT — and pairing each teardown with a redesigned Figma concept.",
+    image:
+      "https://framerusercontent.com/images/iEXYGyDIfcXiBvIP7jlSxH16p3Y.png",
+    imageAlt: "Tea Palette case study series",
+    size: "large",
+  },
+  {
+    slug: "taug-magazine",
+    number: "03",
     title: "TAUG Magazine",
     category: "Web Design",
     year: "2025",
@@ -189,18 +202,5 @@ export const projects: Project[] = [
         ],
       },
     ],
-  },
-  {
-    slug: "tea-palette",
-    number: "03",
-    title: "Tea Palette",
-    category: "Case Study",
-    year: "2026",
-    description:
-      "An ongoing case-study series breaking down consumer apps — Beli, Apple Maps, ChatGPT — and pairing each teardown with a redesigned Figma concept.",
-    image:
-      "https://framerusercontent.com/images/iEXYGyDIfcXiBvIP7jlSxH16p3Y.png",
-    imageAlt: "Tea Palette case study series",
-    size: "large",
   },
 ];
