@@ -57,7 +57,7 @@ export default function Hero() {
             the intro instead of across a gap */}
         <div className="lg:pl-6">
           <Reveal>
-            <p className="text-base sm:text-lg font-display font-medium leading-snug max-w-md">
+            <p className="text-sm sm:text-base font-display font-medium leading-snug max-w-md text-coffee">
               {
                 "I design thoughtful digital experiences at the intersection of product, consumer behavior, and visual storytelling."
               }
