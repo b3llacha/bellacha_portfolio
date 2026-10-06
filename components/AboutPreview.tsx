@@ -7,7 +7,7 @@ export default function AboutPreview() {
   return (
     <section
       id="about"
-      className="relative px-6 sm:px-6 lg:px-12 py-16 sm:py-24 bg-pill/40 rounded-3xl mx-4 sm:mx-8 overflow-hidden"
+      className="relative px-6 sm:px-8 lg:px-10 py-16 sm:py-24 bg-pill/40 rounded-3xl mx-6 sm:mx-10 lg:mx-14 overflow-hidden"
     >
       <Patch name="heart" size={36} rotate="-5deg" style={{ top: "16px", left: "6%" }} />
       <Patch name="star-yellow" size={30} rotate="8deg" style={{ bottom: "16px", right: "5%" }} />

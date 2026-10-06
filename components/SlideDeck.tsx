@@ -8,12 +8,16 @@ import Image from "next/image";
 export function SlideDeck({
   slides,
   aspectClassName = "aspect-[16/9]",
+  sizes = "(max-width: 640px) 90vw, 45vw",
 }: {
   slides: { src: string; alt: string }[];
   /** Overrides the frame's aspect ratio (default aspect-[16/9], tuned for
    * landscape pitch-deck slides) — pass a taller ratio for mixed-orientation
    * photo carousels. */
   aspectClassName?: string;
+  /** Overrides the image `sizes` hint — pass a wider value when the deck is
+   * shown full-width so the browser loads a sharp enough image. */
+  sizes?: string;
 }) {
   const [index, setIndex] = useState(0);
   const total = slides.length;
@@ -34,7 +38,7 @@ export function SlideDeck({
           src={slides[index].src}
           alt={slides[index].alt}
           fill
-          sizes="(max-width: 640px) 90vw, 45vw"
+          sizes={sizes}
           className="object-cover"
         />
         <span className="absolute bottom-3 right-3 rounded-full bg-ink/70 text-paper text-xs px-2.5 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
