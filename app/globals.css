@@ -205,3 +205,14 @@ body {
   opacity: 0.9;
   z-index: 1;
 }
+
+/* Homepage experience cards: on hover the card takes on its polaroid tape
+   colour at 15% (--tint is the tape hex + "26" alpha). An inset shadow paints
+   the tint above the background but under the text, and animates smoothly. */
+.tint-card {
+  transition: box-shadow 0.3s ease;
+}
+.tint-card:hover,
+.tint-card:focus-visible {
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06), inset 0 0 0 999px var(--tint);
+}

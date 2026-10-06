@@ -31,7 +31,7 @@ export default function ExperienceIndexPage() {
             <Reveal key={e.slug} delay={i * 60}>
               <Link
                 href={`/experience/${e.slug}`}
-                className="group block rounded-2xl border border-coffee/15 p-5 h-full hover:shadow-[0_2px_24px_rgba(0,0,0,0.06)] transition-[background-color,box-shadow] hover:bg-coffee/10"
+                className="group flex flex-col rounded-2xl border border-coffee/15 p-5 h-full hover:shadow-[0_2px_24px_rgba(0,0,0,0.06)] transition-[background-color,box-shadow] hover:bg-coffee/10"
               >
                 <p className="font-display font-bold text-base text-coffee">
                   {e.place}
@@ -45,6 +45,10 @@ export default function ExperienceIndexPage() {
                     ))}
                   </ul>
                 )}
+                <span className="mt-auto self-end pt-4 inline-flex items-center gap-1 text-sm font-medium text-coffee origin-right transition-transform duration-200 group-hover:scale-110">
+                  Read more
+                  <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5">→</span>
+                </span>
               </Link>
             </Reveal>
           ))}

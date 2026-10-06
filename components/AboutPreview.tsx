@@ -52,7 +52,8 @@ export default function AboutPreview() {
               )}
               <Link
                 href={`/experience/${e.slug}`}
-                className="relative z-10 block rounded-2xl border border-coffee/15 p-5 h-full bg-[#F8F5EE] hover:shadow-[0_2px_24px_rgba(0,0,0,0.06)] transition-[background-color,box-shadow] hover:bg-[#E8E2DA]"
+                className="tint-card relative z-10 block rounded-2xl border border-coffee/15 p-5 h-full bg-[#F8F5EE]"
+                style={{ ["--tint" as string]: `${polaroidColors[i % polaroidColors.length]}26` }}
               >
                 <p className="font-display font-bold text-base text-coffee">
                   {e.place}
