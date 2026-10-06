@@ -9,6 +9,9 @@ export type Project = {
   category: string;
   year: string;
   description: string;
+  /** Optional short line shown under the title on the project's own page,
+   * in place of `description` (which still shows on the project cards). */
+  intro?: string;
   image: string;
   imageAlt: string;
   size: "large" | "small";
@@ -56,6 +59,46 @@ export const projects: Project[] = [
       "https://framerusercontent.com/images/aJbUzjJOyv1p9xQ9cwBtxzMc7o.png",
     imageAlt: "TAUG Magazine website redesign",
     size: "small",
+    intro: "Website redesign",
+    sections: [
+      {
+        heading: "Problem",
+        body: [
+          "The previous site lacked a clear visual hierarchy and strong brand identity, making it harder for new visitors to quickly understand the publication and navigate its content.",
+        ],
+      },
+      {
+        heading: "Audience",
+        body: [
+          "UC Berkeley students, readers, writers, artists, and students interested in faith, philosophy, and creative discussion.",
+        ],
+      },
+      {
+        heading: "Goal",
+        body: [
+          "Create a website that:",
+          {
+            list: [
+              "Clearly communicates TAUG’s identity and mission",
+              "Feels more like an editorial publication",
+              "Makes content and involvement opportunities easier to discover",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Design Approach",
+        body: [
+          "I simplified the page structure, strengthened typography and spacing, and created clearer pathways to key content such as the journal, blog, and team opportunities.",
+        ],
+      },
+      {
+        heading: "Outcome",
+        body: [
+          "The final design presents TAUG as a more established and intentional publication while making the website easier to understand and explore.",
+        ],
+      },
+    ],
   },
   {
     slug: "tea-palette",

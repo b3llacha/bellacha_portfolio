@@ -50,7 +50,7 @@ export default function ProjectPage({
             {project.title}
           </h1>
           <p className="mt-5 max-w-lg text-ink-soft leading-relaxed">
-            {project.description}
+            {project.intro ?? project.description}
           </p>
         </Reveal>
       </section>
