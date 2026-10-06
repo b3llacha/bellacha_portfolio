@@ -24,7 +24,7 @@ const mono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bella Cha — Product Design · Marketing · Consumer Experience",
+  title: "Bella Cha",
   description:
     "Bella Cha is a UC Berkeley Cognitive Science student working across product design, marketing, and consumer experience.",
   metadataBase: new URL("https://b3llacha.com"),
