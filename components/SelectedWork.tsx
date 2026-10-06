@@ -37,7 +37,7 @@ export default function SelectedWork() {
               </div>
               <div className="p-5">
                 <p className="text-xs text-ink-faint mb-1">{project.year}</p>
-                <h3 className="font-display font-bold text-lg leading-snug mb-2 group-hover:underline decoration-1 underline-offset-4">
+                <h3 className="font-display font-bold text-lg leading-snug mb-2 text-[#8A2433] group-hover:underline decoration-1 underline-offset-4">
                   {project.title}
                 </h3>
                 <p className="text-sm text-ink-soft leading-relaxed">
