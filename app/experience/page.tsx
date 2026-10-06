@@ -5,6 +5,7 @@ import Nav from "@/components/Nav";
 import Reveal from "@/components/Reveal";
 import { Patch } from "@/components/Patch";
 import { experience } from "@/lib/experience";
+import PatchScatter from "@/components/PatchScatter";
 
 export const metadata: Metadata = {
   title: "Experience — Bella Cha",
@@ -12,7 +13,8 @@ export const metadata: Metadata = {
 
 export default function ExperienceIndexPage() {
   return (
-    <main>
+    <main className="relative">
+      <PatchScatter seed={4} count={8} />
       <Nav />
 
       <section className="relative px-6 sm:px-10 lg:px-14 pt-6 pb-10 overflow-hidden">

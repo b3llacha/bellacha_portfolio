@@ -12,6 +12,7 @@ import { RegionsMap } from "@/components/RegionsMap";
 import { MarketMatrix } from "@/components/MarketMatrix";
 import { SlideDeck } from "@/components/SlideDeck";
 import { experience } from "@/lib/experience";
+import PatchScatter from "@/components/PatchScatter";
 
 export function generateStaticParams() {
   return experience.map((e) => ({ slug: e.slug }));
@@ -38,7 +39,8 @@ export default function ExperiencePage({
   const showCaseNotes = entry.caseNotes !== false;
 
   return (
-    <main>
+    <main className="relative">
+      <PatchScatter seed={0} count={8} />
       <Nav />
       <section className="relative px-6 sm:px-10 lg:px-14 pt-6 pb-10 overflow-hidden">
         <Patch name="heart" size={36} rotate="6deg" style={{ top: "16px", right: "8%" }} />

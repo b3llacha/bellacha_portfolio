@@ -14,6 +14,7 @@ import { SlideDeck } from "@/components/SlideDeck";
 import { SlideStrip } from "@/components/SlideStrip";
 import { projects } from "@/lib/projects";
 import type { Section } from "@/lib/types";
+import PatchScatter from "@/components/PatchScatter";
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -291,7 +292,8 @@ export default function ProjectPage({
 
 
   return (
-    <main>
+    <main className="relative">
+      <PatchScatter seed={3} count={8} />
       <Nav />
 
       <section className="relative px-6 sm:px-10 lg:px-14 pt-6 pb-10 overflow-hidden">

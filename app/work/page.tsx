@@ -7,6 +7,7 @@ import Nav from "@/components/Nav";
 import Reveal from "@/components/Reveal";
 import { Patch } from "@/components/Patch";
 import { projects } from "@/lib/projects";
+import PatchScatter from "@/components/PatchScatter";
 
 export const metadata: Metadata = {
   title: "Projects — Bella Cha",
@@ -14,7 +15,8 @@ export const metadata: Metadata = {
 
 export default function WorkPage() {
   return (
-    <main>
+    <main className="relative">
+      <PatchScatter seed={2} count={6} />
       <Nav />
 
       <section className="relative px-6 sm:px-10 lg:px-14 pt-6 pb-10 overflow-hidden">

@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import Reveal from "@/components/Reveal";
 import { Heart } from "@/components/Doodle";
 import { Patch } from "@/components/Patch";
+import PatchScatter from "@/components/PatchScatter";
 
 export const metadata: Metadata = {
   title: "Archive — Bella Cha",
@@ -18,7 +19,8 @@ const entries = [
 
 export default function ArchivePage() {
   return (
-    <main>
+    <main className="relative">
+      <PatchScatter seed={2} count={5} />
       <Nav />
 
       <section className="relative px-6 sm:px-10 lg:px-14 pt-6 pb-16 sm:pb-24 overflow-hidden">

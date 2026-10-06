@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal";
 import { Patch } from "@/components/Patch";
 import { contact } from "@/lib/about";
 import { LinkedInIcon } from "@/components/SocialIcons";
+import PatchScatter from "@/components/PatchScatter";
 
 export const metadata: Metadata = {
   title: "Contact — Bella Cha",
@@ -11,7 +12,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="relative min-h-screen flex flex-col">
+      <PatchScatter seed={3} count={5} />
       <Nav />
 
       <section className="relative flex-1 px-6 sm:px-10 lg:px-14 py-20 sm:py-28 flex flex-col justify-center overflow-hidden">

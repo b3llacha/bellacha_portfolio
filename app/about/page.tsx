@@ -7,12 +7,14 @@ import { Patch } from "@/components/Patch";
 import { Polaroid } from "@/components/Polaroid";
 import { bio, education, focus } from "@/lib/about";
 import { experience } from "@/lib/experience";
+import PatchScatter from "@/components/PatchScatter";
 
 export const metadata: Metadata = { title: "About — Bella Cha" };
 
 export default function AboutPage() {
   return (
-    <main>
+    <main className="relative">
+      <PatchScatter seed={1} count={8} />
       <Nav />
       <section className="relative px-6 sm:px-10 lg:px-14 pt-6 pb-20 sm:pb-28 overflow-hidden">
         <Patch name="cloud" size={36} rotate="-6deg" style={{ top: "16px", right: "8%" }} />
