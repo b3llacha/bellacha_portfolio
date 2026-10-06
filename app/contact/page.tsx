@@ -41,9 +41,6 @@ export default function ContactPage() {
           >
             <LinkedInIcon />
           </a>
-          <a href={`mailto:${contact.email}`} className="link-draw">
-            email
-          </a>
         </Reveal>
       </section>
 
