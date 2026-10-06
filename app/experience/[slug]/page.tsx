@@ -337,7 +337,7 @@ export default function ExperiencePage({
                 </div>
               )}
               {s.instagramGrid && s.images && s.images.length > 0 && (
-                <div className="mt-6 max-w-sm rounded-2xl border border-line overflow-hidden bg-white">
+                <div className="mt-6 max-w-2xl rounded-2xl border border-line overflow-hidden bg-white">
                   <div className="flex items-center gap-2 px-4 py-3 border-b border-line">
                     <span className="w-7 h-7 rounded-full bg-ink flex items-center justify-center text-white text-xs">
                       <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5">
@@ -350,12 +350,12 @@ export default function ExperiencePage({
                   </div>
                   <div className="grid grid-cols-3 gap-[2px] bg-line">
                     {s.images.map((img) => (
-                      <div key={img.src} className="relative aspect-square bg-ink/5">
+                      <div key={img.src} className="relative aspect-[3/4] bg-ink/5">
                         <Image
                           src={img.src}
                           alt={img.alt}
                           fill
-                          sizes="180px"
+                          sizes="(max-width: 640px) 33vw, 230px"
                           className="object-cover"
                         />
                       </div>
