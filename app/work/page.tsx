@@ -32,7 +32,7 @@ export default function WorkPage() {
             <Reveal key={project.slug} delay={i * 60}>
               <Link
                 href={`/work/${project.slug}`}
-                className="group block rounded-2xl border border-line overflow-hidden h-full hover:shadow-[0_2px_24px_rgba(0,0,0,0.06)] transition-shadow"
+                className="group block rounded-2xl border border-line overflow-hidden h-full hover:shadow-[0_2px_24px_rgba(0,0,0,0.06)] transition-[background-color,box-shadow] hover:bg-coffee/10"
               >
                 <div className="relative aspect-[16/11] bg-pill">
                   <Image
