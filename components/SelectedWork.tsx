@@ -55,7 +55,7 @@ export default function SelectedWork() {
       <Reveal delay={200} className="mt-10">
         <Link href="/work" className="text-coffee text-sm font-medium inline-flex items-center gap-2 origin-left transition-transform duration-200 hover:scale-110">
           <Coffee className="text-coffee" />
-          see all work
+          see all projects
         </Link>
       </Reveal>
     </section>

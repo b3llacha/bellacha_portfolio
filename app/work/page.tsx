@@ -9,7 +9,7 @@ import { Patch } from "@/components/Patch";
 import { projects } from "@/lib/projects";
 
 export const metadata: Metadata = {
-  title: "Work — Bella Cha",
+  title: "Projects — Bella Cha",
 };
 
 export default function WorkPage() {
@@ -22,7 +22,7 @@ export default function WorkPage() {
         <Patch name="heart" size={28} rotate="8deg" style={{ bottom: "10px", left: "6%" }} />
         <Reveal>
           <h1 className="font-display font-extrabold text-coffee text-4xl sm:text-5xl">
-            all work
+            projects
           </h1>
         </Reveal>
       </section>
