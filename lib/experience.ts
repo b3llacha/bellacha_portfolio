@@ -9,6 +9,8 @@ export type Experience = {
   /** Optional live link shown right under the summary paragraph in the hero
    * (e.g. a LinkedIn post about this role). */
   summaryLink?: { label: string; href: string };
+  /** 4-5 short bullet points shown on this entry's card in the experience list. */
+  highlights?: string[];
   image?: string;
   imageAlt?: string;
   /** Set to false to hide the "case notes" section — used for entries
@@ -45,6 +47,13 @@ export const experience: Experience[] = [
     place: "Hyundai Corporation",
     role: "Business Development & Marketing Intern",
     period: "Feb 2026 — May 2026",
+    highlights: [
+      "Market research & competitive analysis",
+      "Buyer outreach to 300+ distributors and retailers",
+      "Market-entry strategy across 3+ countries",
+      "Localized influencer campaigns in Peru & Mexico",
+      "Brand website contributions",
+    ],
     summary:
       "Global expansion work for Korean beauty and wellness brands — market research, buyer outreach, and localized launch strategy across Europe and Latin America — that built a pipeline of 300+ buyers and 10 partnerships.",
     heroStats: [
@@ -133,6 +142,13 @@ export const experience: Experience[] = [
     place: "JUNGSAEMMOOL Beauty",
     role: "Global Marketing Intern",
     period: "Aug 2025 — Nov 2025",
+    highlights: [
+      "Global campaigns & brand activations",
+      "English localization & international messaging",
+      "Agency coordination & campaign execution",
+      "Content planning, filming & production",
+      "Instagram & TikTok content",
+    ],
     summary:
       "Global campaign work for a Korean beauty brand — social content, localization, and launch support across Amazon Prime Day, Costco, KCON, and U.S. pop-ups — that helped grow the brand's global following by 16,000+ in three months.",
     summaryLink: { label: "LinkedIn Post", href: "https://lnkd.in/p/gaayTm4y" },
@@ -264,6 +280,12 @@ export const experience: Experience[] = [
     role: "UI/UX Designer & Social Media Manager",
     period: "Jan 2025 — Present",
     summary: "UI/UX design and social media management for Spero Apparel.",
+    highlights: [
+      "Website redesign & UI/UX design",
+      "Product and collection page design",
+      "Social media management",
+      "Recruitment & event content",
+    ],
     sectionsFullWidth: true,
     sections: [
       {
@@ -311,6 +333,12 @@ export const experience: Experience[] = [
     role: "UI/UX Designer",
     period: "Jan 2025 — Present",
     summary: "UI/UX design for TAUG Magazine, a UC Berkeley student publication.",
+    highlights: [
+      "Magazine cover & layout design",
+      "Website design",
+      "Social media content",
+      "UI/UX design",
+    ],
     sectionsFullWidth: true,
     sections: [
       {

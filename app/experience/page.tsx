@@ -26,7 +26,7 @@ export default function ExperienceIndexPage() {
       </section>
 
       <section className="px-6 sm:px-10 lg:px-14 pb-20 sm:pb-28">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {experience.map((e, i) => (
             <Reveal key={e.slug} delay={i * 60}>
               <Link
@@ -38,6 +38,13 @@ export default function ExperienceIndexPage() {
                 </p>
                 <p className="text-sm text-ink-soft mt-1">{e.role}</p>
                 <p className="text-xs text-ink-faint mt-2">{e.period}</p>
+                {e.highlights && e.highlights.length > 0 && (
+                  <ul className="mt-3 space-y-1 text-sm text-ink-soft list-disc pl-5">
+                    {e.highlights.map((h) => (
+                      <li key={h}>{h}</li>
+                    ))}
+                  </ul>
+                )}
               </Link>
             </Reveal>
           ))}
