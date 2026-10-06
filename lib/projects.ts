@@ -12,6 +12,9 @@ export type Project = {
   /** Optional short line shown under the title on the project's own page,
    * in place of `description` (which still shows on the project cards). */
   intro?: string;
+  /** Optional longer headline for the project's own page, in place of
+   * `title` (which still shows on the project cards). */
+  pageTitle?: string;
   image: string;
   imageAlt: string;
   size: "large" | "small";
@@ -59,8 +62,17 @@ export const projects: Project[] = [
       "https://framerusercontent.com/images/aJbUzjJOyv1p9xQ9cwBtxzMc7o.png",
     imageAlt: "TAUG Magazine website redesign",
     size: "small",
-    intro: "Website redesign",
+    pageTitle: "To An Unknown God — Website Redesign",
+    // Empty on purpose: the page title already says "Website Redesign", and
+    // the Overview section below carries the intro.
+    intro: "",
     sections: [
+      {
+        heading: "Overview",
+        body: [
+          "Redesigned the website for To An Unknown God, UC Berkeley’s student-run Christian journal, to create a more thoughtful, editorial, and cohesive digital presence.",
+        ],
+      },
       {
         heading: "Problem",
         body: [

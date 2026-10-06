@@ -24,7 +24,7 @@ export function generateMetadata({
 }): Metadata {
   const project = projects.find((p) => p.slug === params.slug);
   if (!project) return {};
-  return { title: `${project.title} — Bella Cha` };
+  return { title: `${project.pageTitle ?? project.title} — Bella Cha` };
 }
 
 export default function ProjectPage({
@@ -47,11 +47,13 @@ export default function ProjectPage({
         <Reveal>
           <span className="pill">{project.category} &middot; {project.year}</span>
           <h1 className="font-display font-extrabold text-coffee text-4xl sm:text-5xl mt-4 max-w-3xl">
-            {project.title}
+            {project.pageTitle ?? project.title}
           </h1>
-          <p className="mt-5 max-w-lg text-ink-soft leading-relaxed">
-            {project.intro ?? project.description}
-          </p>
+          {(project.intro ?? project.description) && (
+            <p className="mt-5 max-w-lg text-ink-soft leading-relaxed">
+              {project.intro ?? project.description}
+            </p>
+          )}
         </Reveal>
       </section>
 
