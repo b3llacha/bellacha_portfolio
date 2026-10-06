@@ -187,7 +187,6 @@ export const experience: Experience[] = [
           { src: "/images/jungsaemmool/flagship/flagship-04.jpg", alt: "JUNGSAEMMOOL 101 Seongsu — lounge area with retail pods" },
           { src: "/images/jungsaemmool/flagship/flagship-05.jpg", alt: "JUNGSAEMMOOL 101 Seongsu — pre-opening staff" },
           { src: "/images/jungsaemmool/flagship/flagship-06.jpg", alt: "JUNGSAEMMOOL 101 Seongsu — \"Beyond Gravity\" campaign visual" },
-          { src: "/images/jungsaemmool/flagship/flagship-07.jpg", alt: "JUNGSAEMMOOL 101 Seongsu — opening-day catering spread" },
         ],
         imagesCompact: true,
       },
