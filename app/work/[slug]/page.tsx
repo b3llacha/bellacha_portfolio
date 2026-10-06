@@ -11,7 +11,7 @@ import { Patch } from "@/components/Patch";
 import { RegionsMap } from "@/components/RegionsMap";
 import { MarketMatrix } from "@/components/MarketMatrix";
 import { SlideDeck } from "@/components/SlideDeck";
-import { AutoCarousel } from "@/components/AutoCarousel";
+import { SlideStrip } from "@/components/SlideStrip";
 import { projects } from "@/lib/projects";
 import type { Section } from "@/lib/types";
 
@@ -395,7 +395,7 @@ export default function ProjectPage({
         <section className="px-6 sm:px-10 lg:px-14 py-8 sm:py-10">
           <Reveal>
             <p className="eyebrow mb-4">{project.showcaseLabel ?? "final design"}</p>
-            <AutoCarousel slides={project.showcase!} />
+            <SlideStrip slides={project.showcase!} />
           </Reveal>
         </section>
       )}
