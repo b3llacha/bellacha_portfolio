@@ -12,9 +12,9 @@ export type Project = {
   /** Optional short line shown under the title on the project's own page,
    * in place of `description` (which still shows on the project cards). */
   intro?: string;
-  /** Optional longer headline for the project's own page, in place of
-   * `title` (which still shows on the project cards). */
-  pageTitle?: string;
+  /** Optional smaller line shown after the title on the project's own page,
+   * on the same line (e.g. "Website Redesign"). */
+  pageSubtitle?: string;
   /** Optional big full-width click-through carousel of the final design. */
   showcase?: GalleryImage[];
   /** Heading of the section the showcase carousel sits right before (e.g.
@@ -55,8 +55,8 @@ export const projects: Project[] = [
     image: "/images/spero/redesign/01-to-hope.jpg",
     imageAlt: "Spero website redesign — “to hope.” brand statement in large serif type",
     size: "large",
-    pageTitle: "Spero Apparel — Website Redesign",
-    // Empty on purpose: the page title already says "Website Redesign", and
+    pageSubtitle: "Website Redesign",
+    // Empty on purpose: the page heading already says "Website Redesign", and
     // the Overview section below carries the intro.
     intro: "",
     sections: [
@@ -129,8 +129,8 @@ export const projects: Project[] = [
     image: "/images/taug/redesign/05-issues.jpg",
     imageAlt: "TAUG website redesign — issues page with a grid of magazine covers",
     size: "small",
-    pageTitle: "To An Unknown God — Website Redesign",
-    // Empty on purpose: the page title already says "Website Redesign", and
+    pageSubtitle: "Website Redesign",
+    // Empty on purpose: the page heading already says "Website Redesign", and
     // the Overview section below carries the intro.
     intro: "",
     showcaseBefore: "Outcome",

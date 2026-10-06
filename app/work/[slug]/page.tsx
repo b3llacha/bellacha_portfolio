@@ -26,7 +26,10 @@ export function generateMetadata({
 }): Metadata {
   const project = projects.find((p) => p.slug === params.slug);
   if (!project) return {};
-  return { title: `${project.pageTitle ?? project.title} — Bella Cha` };
+  const heading = project.pageSubtitle
+    ? `${project.title} — ${project.pageSubtitle}`
+    : project.title;
+  return { title: `${heading} — Bella Cha` };
 }
 
 export default function ProjectPage({
@@ -295,8 +298,16 @@ export default function ProjectPage({
         <Patch name="star-yellow" size={36} rotate="-8deg" style={{ top: "16px", right: "8%" }} />
         <Reveal>
           <span className="pill">{project.category} &middot; {project.year}</span>
-          <h1 className="font-display font-extrabold text-coffee text-4xl sm:text-5xl mt-4 max-w-3xl">
-            {project.pageTitle ?? project.title}
+          <h1 className="font-display font-extrabold text-coffee mt-4 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <span className="text-4xl sm:text-5xl whitespace-nowrap">
+              {project.title}
+            </span>
+            {project.pageSubtitle && (
+              <span className="text-xl sm:text-2xl font-bold text-coffee/70 whitespace-nowrap">
+                — 
+                {project.pageSubtitle}
+              </span>
+            )}
           </h1>
           {(project.intro ?? project.description) && (
             <p className="mt-5 max-w-lg text-ink-soft leading-relaxed">
